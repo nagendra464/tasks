@@ -5,10 +5,10 @@
     creates: "/nfs/abc.txt"
 
 
-- name: moount
-  command: sudo mount 172.31.45.32:/home /nfs/home
-  args:
-    creates: "/nfs/abc.txt"
+#- name: moount
+#  command: sudo mount 172.31.45.32:/home /nfs/home
+#  args:
+#    creates: "/nfs/abc.txt"
 
 
 
