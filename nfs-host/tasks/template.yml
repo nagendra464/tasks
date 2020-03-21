@@ -1,8 +1,8 @@
 ---
-- name: editing file for nfs-kernel-server
+- name: Copy exports file.
   template:
-    src: /templates/exports.j2
+    src: exports.j2
     dest: /etc/exports
     owner: root
     group: root
-    remote_src: yes
+    mode: 0644
