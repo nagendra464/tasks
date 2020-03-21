@@ -1,7 +1,7 @@
 ---
 - name: configure the mount points
   template:
-    src: exports.j2
+    src: templates/exports.j2
     dest: /etc/exports
  
     
