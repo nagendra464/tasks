@@ -1,7 +1,7 @@
 ---
 - name: editing file for nfs-kernel-server
   template:
-    src: /export.j2
+    src: /exports.j2
     dest: /etc/exports
     owner: root
     group: root
