@@ -2,4 +2,4 @@
 - name: editing file for nfs-kernel-server
   template:
    src: exports.j2
-   dest: /etc/exports  
+   dest: /home/nag
