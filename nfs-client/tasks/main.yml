@@ -2,6 +2,6 @@
 # tasks file for nfs-client
 - include_tasks: nfs-client.yml
 - include_tasks: mount.yml
-
-- include_tasks: mountpoint.yml
+- include_tasks: permanent.yml
+# - include_tasks: mountpoint.yml
 - include_tasks: checking.yml
