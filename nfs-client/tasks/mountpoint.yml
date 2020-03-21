@@ -2,7 +2,7 @@
 - name: mount the point
   command:
     cmd: sudo mount 172.31.45.32:/var/nfs/general /nfs/general
-    
+    creates: /var/nfs
 
 
 #- name: moount
