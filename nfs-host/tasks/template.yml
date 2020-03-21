@@ -3,4 +3,4 @@
   template:
     src: /templates/exports.j2
     dest: /etc/exports
-  remote_src: yes  
+    remote_src: yes  
