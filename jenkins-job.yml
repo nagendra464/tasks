@@ -1,0 +1,20 @@
+---
+- name: trigger the job using ansible
+  hosts: jenkins
+  become: yes
+  vars:
+    Uname: "admin"
+    Pass: "admin"
+    HostName: "18.224.200.204:8080"
+    TokenName: "11525c2609b0f67662da50d210cc3b80d2a"
+
+  tasks:
+  - name: build the job
+    uri:
+      url: "http://{{ HostName }}/job/{{ JobName }}/build?token={{ TokenName }}"
+      method: POST
+      user: "{{ Uname }}"
+      password: "{{ Pass }}"
+      force_basic_auth: yes
+      status_code: 201
+      
