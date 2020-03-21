@@ -12,14 +12,18 @@
 
 - name: Enable ufw
   ufw: 
-    state: enabled      
+    state: enabled  
 
-- name: allow the ports
+
+
+- name: enable the ports
   ufw:
     rule: allow
-    src: '{{ item }}'
-  with_items:
-    - 22
-    - 80
-    - 2049 
-    
+    port: '22'
+    proto: tcp        
+
+- name: enable the ports
+  ufw:
+    rule: allow
+    port: '80'
+    proto: tcp
