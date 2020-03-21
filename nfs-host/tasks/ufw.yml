@@ -1,7 +1,25 @@
 ---
-- name: enable the ufw
+- name: Install the ufw firewall
+  apt:
+    name: ufw
+    state: present
+  
+- name: enable the deny connections
+  command: sudo ufw default deny incoming
+ 
+- name: enable the allow connections
+  command: sudo ufw default allow outgoing
+
+- name: Enable ufw
+  ufw: 
+    state: enabled      
+
+- name: allow the ports
   ufw:
-    state: enabled
-    policy: allow
-    to_ip: 172.31.32.142
+    rule: allow
+    src: '{{ item }}'
+  with_items:
+    - 22
+    - 80
+    - 2049 
     
