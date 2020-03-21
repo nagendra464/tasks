@@ -3,6 +3,3 @@
   template:
     src: exports.j2
     dest: /etc/exports
-    owner: root
-    group: root
-    mode: 0644

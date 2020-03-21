@@ -4,7 +4,7 @@
 
 - include_tasks: file-create.yml
 
-- include_tasks: template.yml
+- include_tasks: copy.yml
 
 - include_tasks: service.yml
 - include_tasks: ufw.yml
