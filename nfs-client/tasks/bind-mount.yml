@@ -3,14 +3,14 @@
   mount:
     path: /nfs/home
     src: 172.31.45.32:/home
-    fstype: none
-    state: mounted
+    fstype: mounted
+    state: present
     
 
 - name: Mount the directories
   mount:
     path: /nfs/general
     src: 172.31.45.32:/var/nfs/general
-    fstype: none
-    state: mounted
+    fstype: mounted
+    state: present
         
