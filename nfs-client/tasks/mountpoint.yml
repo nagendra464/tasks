@@ -3,5 +3,5 @@
   command: sudo mount 172.31.45.32:/var/nfs/general /nfs/general
 
 
-- name: moount
-  command: sudo mount 172.31.45.32:/home /nfs/home
+#- name: moount
+ # command: sudo mount 172.31.45.32:/home /nfs/home
