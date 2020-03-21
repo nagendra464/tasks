@@ -3,7 +3,6 @@
   mount:
     path: /nfs/home
     src: 172.31.47.209:/home
-    opts: bind
     fstype: none
     state: mounted
     
@@ -12,7 +11,6 @@
   mount:
     path: /nfs/general
     src: 172.31.47.209:/var/nfs/general
-    opts: bind
     fstype: none
     state: mounted
         
