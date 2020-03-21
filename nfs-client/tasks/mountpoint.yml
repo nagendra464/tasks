@@ -1,6 +1,13 @@
 ---
+- name: creates
+  file:
+   path: /var/test
+   state: touch
+
+
 - name: mount the point
   command: sudo mount 172.31.45.32:/var/nfs/general /nfs/general
+  creates: /var/test
 
 
 #- name: moount
