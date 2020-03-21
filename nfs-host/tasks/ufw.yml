@@ -14,7 +14,8 @@
   ufw: 
     state: enabled  
 
-
+- name: enable the nfs port
+  command: sudo ufw allow from 172.31.46.21 to any port nfs
 
 - name: enable the ports
   ufw:
@@ -27,3 +28,5 @@
     rule: allow
     port: '80'
     proto: tcp
+
+
