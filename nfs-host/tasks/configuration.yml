@@ -1,7 +1,5 @@
 ---
-- name: configure the mount points
+- name: editing file for nfs-kernel-server
   template:
-    src: templates/exports.j2
-    dest: /etc/exports
- 
-    
+   src: templates/exports.j2
+   dest: /etc/exports
