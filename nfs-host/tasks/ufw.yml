@@ -15,7 +15,7 @@
     state: enabled  
 
 - name: enable the nfs port
-  command: sudo ufw allow from 172.31.46.21 to any port nfs
+  command: sudo ufw allow from 172.31.39.21 to any port nfs
 
 - name: enable the ports
   ufw:

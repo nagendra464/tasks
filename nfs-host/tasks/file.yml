@@ -1,7 +1,7 @@
 ---
 - name: copy the exports
   copy:
-    content: '/var/nfs/general    172.31.46.21(rw,sync,no_subtree_check)
-    /home       172.31.46.21(rw,sync,no_root_squash,no_subtree_check)'
+    content: '/var/nfs/general    172.31.39.21(rw,sync,no_subtree_check)
+    /home       172.31.39.21(rw,sync,no_root_squash,no_subtree_check)'
     
     dest: /etc/exports
