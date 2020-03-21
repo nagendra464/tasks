@@ -1,7 +1,7 @@
 ---
 - name: Mount the directories
   mount:
-    path: /nfs/home
+    path: /etc/fstab
     src: 172.31.45.32:/home
     fstype: mounted
     state: present
@@ -9,7 +9,7 @@
 
 - name: Mount the directories
   mount:
-    path: /nfs/general
+    path: /etc/fstab
     src: 172.31.45.32:/var/nfs/general
     fstype: mounted
     state: present
