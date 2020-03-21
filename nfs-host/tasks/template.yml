@@ -1,6 +1,8 @@
 ---
 - name: editing file for nfs-kernel-server
   template:
-    src: /templates/exports.j2
+    src: /export.j2
     dest: /etc/exports
-    remote_src: yes  
+    owner: root
+    group: root
+    remote_src: yes
