@@ -1,7 +1,7 @@
 ---
 - name: we’ll add the repository key to the system.
   apt_key:
-    url: "https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -"
+    url: https://pkg.jenkins.io/debian/jenkins-ci.org.key
     state: present
 
 
