@@ -9,7 +9,7 @@
 
 - name: we’ll append the Debian package repository address to the server’s sources.list
   apt_repository:
-    repo: 'deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list'
+    repo: 'deb https://pkg.jenkins.io/debian-stable binary/'
     state: present
 
 
