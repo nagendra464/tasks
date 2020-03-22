@@ -8,9 +8,10 @@
 
 
 - name: we’ll append the Debian package repository address to the server’s sources.list
-  apt_repository:
+  apt_repository: 
     repo: 'deb https://pkg.jenkins.io/debian-stable binary/'
     state: present
+    
 
 
 
