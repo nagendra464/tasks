@@ -9,7 +9,7 @@
 
 - name:  crete the home directory
   file:
-    path: /home 
+    path: /home/nfs
     state: directory
     owner: root
     group: root  
