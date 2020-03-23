@@ -1,10 +1,18 @@
 ---
-- name: file
+- name: create the general directory
   file:
     path: /var/nfs/general
     state: directory
-    owner: nobody
-    group: nogroup
+    owner: root
+    group: root
+
+
+- name:  crete the home directory
+  file:
+    path: /home 
+    state: directory
+    owner: root
+    group: root  
 
 
     
