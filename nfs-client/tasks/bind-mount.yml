@@ -2,7 +2,7 @@
 - name: Mount the directories
   mount:
     path: /nfs/home
-    src: 172.31.45.32:/home
+    src: 172.31.45.32:/nfs/home
     fstype: mounted
     state: present
     
