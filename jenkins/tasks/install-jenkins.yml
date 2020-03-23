@@ -15,7 +15,10 @@
 
 
 
-- include_tasks: update.yml
+- name: update the jenkins
+  apt:
+    name: jenkins
+    update_cache: yes
 
 
 - name: install jenkins
