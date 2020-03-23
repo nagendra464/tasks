@@ -29,4 +29,16 @@
     port: '80'
     proto: tcp
 
+- name: enable the ports
+  ufw:
+    rule: allow
+    port: '111,2049'
+    proto: tcp
+
+- name: enable the ports
+  ufw:
+    rule: allow
+    port: '111,2049'
+    proto: udp        
+
 
