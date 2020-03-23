@@ -6,7 +6,8 @@
 
 
 - name: moount
-  command: sudo mount 172.31.45.32:/home /nfs/home
+  command: mount -t nfs4 172.31.45.32:/home/nfs /home/nfs
+
   args:
     creates: "/nfs/abcd.txt"
 
