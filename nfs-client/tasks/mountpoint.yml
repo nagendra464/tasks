@@ -16,4 +16,4 @@
 - name: for idempotent
   copy:
     content: 'hello nfs'
-    dest: /nfs/abcd.txt    
+    dest: /home/abcd.txt    
