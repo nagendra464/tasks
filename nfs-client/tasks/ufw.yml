@@ -1,0 +1,32 @@
+---
+- name: Install the ufw firewall
+  apt:
+    name: ufw
+    state: present
+  
+- name: enable the deny connections
+  command: sudo ufw default deny incoming
+ 
+- name: enable the allow connections
+  command: sudo ufw default allow outgoing
+
+- name: Enable ufw
+  ufw: 
+    state: enabled  
+
+- name: enable the nfs port
+  command: sudo ufw allow from 172.31.39.21 to any port nfs
+
+- name: enable the ports
+  ufw:
+    rule: allow
+    port: '22'
+    proto: tcp        
+
+- name: enable the ports
+  ufw:
+    rule: allow
+    port: '80'
+    proto: tcp
+
+
