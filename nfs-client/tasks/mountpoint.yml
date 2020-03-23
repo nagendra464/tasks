@@ -2,13 +2,13 @@
 - name: mount the point
   command: sudo mount 172.31.45.32:/var/nfs/general /nfs/general
   args:
-    creates: "/nfs/abc.txt"
+    creates: "/nfs/abcd.txt"
 
 
-#- name: moount
-#  command: sudo mount 172.31.45.32:/home /nfs/home
-#  args:
-#    creates: "/nfs/abc.txt"
+- name: moount
+  command: sudo mount 172.31.45.32:/home /nfs/home
+  args:
+    creates: "/nfs/abcd.txt"
 
 
 
@@ -16,4 +16,4 @@
 - name: for idempotent
   copy:
     content: 'hello nfs'
-    dest: /nfs/abc.txt    
+    dest: /nfs/abcd.txt    
